@@ -1,0 +1,1402 @@
+[
+ {
+  "text": "33",
+  "startMs": 0,
+  "endMs": 565,
+  "timestampMs": 0,
+  "confidence": 1,
+  "linea": "e01"
+ },
+ {
+  "text": " hombres",
+  "startMs": 565,
+  "endMs": 884,
+  "timestampMs": 565,
+  "confidence": 1,
+  "linea": "e01"
+ },
+ {
+  "text": " atrapados",
+  "startMs": 884,
+  "endMs": 1364,
+  "timestampMs": 884,
+  "confidence": 1,
+  "linea": "e01"
+ },
+ {
+  "text": " a",
+  "startMs": 1364,
+  "endMs": 1429,
+  "timestampMs": 1364,
+  "confidence": 1,
+  "linea": "e01"
+ },
+ {
+  "text": " 700",
+  "startMs": 1429,
+  "endMs": 2126,
+  "timestampMs": 1429,
+  "confidence": 1,
+  "linea": "e01"
+ },
+ {
+  "text": " metros",
+  "startMs": 2126,
+  "endMs": 2421,
+  "timestampMs": 2126,
+  "confidence": 1,
+  "linea": "e01"
+ },
+ {
+  "text": " bajo",
+  "startMs": 2421,
+  "endMs": 2660,
+  "timestampMs": 2421,
+  "confidence": 1,
+  "linea": "e01"
+ },
+ {
+  "text": " tierra.",
+  "startMs": 2660,
+  "endMs": 3264,
+  "timestampMs": 2660,
+  "confidence": 1,
+  "linea": "e01"
+ },
+ {
+  "text": " Y",
+  "startMs": 3264,
+  "endMs": 3322,
+  "timestampMs": 3264,
+  "confidence": 1,
+  "linea": "e01"
+ },
+ {
+  "text": " el",
+  "startMs": 3322,
+  "endMs": 3474,
+  "timestampMs": 3322,
+  "confidence": 1,
+  "linea": "e01"
+ },
+ {
+  "text": " mundo",
+  "startMs": 3474,
+  "endMs": 3765,
+  "timestampMs": 3474,
+  "confidence": 1,
+  "linea": "e01"
+ },
+ {
+  "text": " los",
+  "startMs": 3765,
+  "endMs": 3939,
+  "timestampMs": 3765,
+  "confidence": 1,
+  "linea": "e01"
+ },
+ {
+  "text": " daba",
+  "startMs": 3939,
+  "endMs": 4165,
+  "timestampMs": 3939,
+  "confidence": 1,
+  "linea": "e01"
+ },
+ {
+  "text": " por",
+  "startMs": 4165,
+  "endMs": 4326,
+  "timestampMs": 4165,
+  "confidence": 1,
+  "linea": "e01"
+ },
+ {
+  "text": " muertos.",
+  "startMs": 4326,
+  "endMs": 5061,
+  "timestampMs": 4326,
+  "confidence": 1,
+  "linea": "e01"
+ },
+ {
+  "text": " 5",
+  "startMs": 5061,
+  "endMs": 5398,
+  "timestampMs": 5061,
+  "confidence": 1,
+  "linea": "e02"
+ },
+ {
+  "text": " de",
+  "startMs": 5398,
+  "endMs": 5508,
+  "timestampMs": 5398,
+  "confidence": 1,
+  "linea": "e02"
+ },
+ {
+  "text": " agosto",
+  "startMs": 5508,
+  "endMs": 5833,
+  "timestampMs": 5508,
+  "confidence": 1,
+  "linea": "e02"
+ },
+ {
+  "text": " de",
+  "startMs": 5833,
+  "endMs": 5960,
+  "timestampMs": 5833,
+  "confidence": 1,
+  "linea": "e02"
+ },
+ {
+  "text": " 2010.",
+  "startMs": 5960,
+  "endMs": 6913,
+  "timestampMs": 5960,
+  "confidence": 1,
+  "linea": "e02"
+ },
+ {
+  "text": " Mina",
+  "startMs": 6913,
+  "endMs": 7140,
+  "timestampMs": 6913,
+  "confidence": 1,
+  "linea": "e02"
+ },
+ {
+  "text": " San",
+  "startMs": 7140,
+  "endMs": 7363,
+  "timestampMs": 7140,
+  "confidence": 1,
+  "linea": "e02"
+ },
+ {
+  "text": " José,",
+  "startMs": 7363,
+  "endMs": 7855,
+  "timestampMs": 7363,
+  "confidence": 1,
+  "linea": "e02"
+ },
+ {
+  "text": " desierto",
+  "startMs": 7855,
+  "endMs": 8302,
+  "timestampMs": 7855,
+  "confidence": 1,
+  "linea": "e02"
+ },
+ {
+  "text": " de",
+  "startMs": 8302,
+  "endMs": 8412,
+  "timestampMs": 8302,
+  "confidence": 1,
+  "linea": "e02"
+ },
+ {
+  "text": " Atacama,",
+  "startMs": 8412,
+  "endMs": 8970,
+  "timestampMs": 8412,
+  "confidence": 1,
+  "linea": "e02"
+ },
+ {
+  "text": " Chile.",
+  "startMs": 8970,
+  "endMs": 9512,
+  "timestampMs": 8970,
+  "confidence": 1,
+  "linea": "e02"
+ },
+ {
+  "text": " De",
+  "startMs": 9512,
+  "endMs": 9595,
+  "timestampMs": 9512,
+  "confidence": 1,
+  "linea": "e03"
+ },
+ {
+  "text": " repente,",
+  "startMs": 9595,
+  "endMs": 10167,
+  "timestampMs": 9595,
+  "confidence": 1,
+  "linea": "e03"
+ },
+ {
+  "text": " la",
+  "startMs": 10167,
+  "endMs": 10278,
+  "timestampMs": 10167,
+  "confidence": 1,
+  "linea": "e03"
+ },
+ {
+  "text": " montaña",
+  "startMs": 10278,
+  "endMs": 10721,
+  "timestampMs": 10278,
+  "confidence": 1,
+  "linea": "e03"
+ },
+ {
+  "text": " se",
+  "startMs": 10721,
+  "endMs": 10869,
+  "timestampMs": 10721,
+  "confidence": 1,
+  "linea": "e03"
+ },
+ {
+  "text": " derrumba",
+  "startMs": 10869,
+  "endMs": 11292,
+  "timestampMs": 10869,
+  "confidence": 1,
+  "linea": "e03"
+ },
+ {
+  "text": " sobre",
+  "startMs": 11292,
+  "endMs": 11540,
+  "timestampMs": 11292,
+  "confidence": 1,
+  "linea": "e03"
+ },
+ {
+  "text": " ellos.",
+  "startMs": 11540,
+  "endMs": 12181,
+  "timestampMs": 11540,
+  "confidence": 1,
+  "linea": "e03"
+ },
+ {
+  "text": " Se",
+  "startMs": 12181,
+  "endMs": 12317,
+  "timestampMs": 12181,
+  "confidence": 1,
+  "linea": "e04"
+ },
+ {
+  "text": " refugian",
+  "startMs": 12317,
+  "endMs": 12763,
+  "timestampMs": 12317,
+  "confidence": 1,
+  "linea": "e04"
+ },
+ {
+  "text": " en",
+  "startMs": 12763,
+  "endMs": 12859,
+  "timestampMs": 12763,
+  "confidence": 1,
+  "linea": "e04"
+ },
+ {
+  "text": " una",
+  "startMs": 12859,
+  "endMs": 13073,
+  "timestampMs": 12859,
+  "confidence": 1,
+  "linea": "e04"
+ },
+ {
+  "text": " pequeña",
+  "startMs": 13073,
+  "endMs": 13497,
+  "timestampMs": 13073,
+  "confidence": 1,
+  "linea": "e04"
+ },
+ {
+  "text": " sala",
+  "startMs": 13497,
+  "endMs": 13746,
+  "timestampMs": 13497,
+  "confidence": 1,
+  "linea": "e04"
+ },
+ {
+  "text": " de",
+  "startMs": 13746,
+  "endMs": 13856,
+  "timestampMs": 13746,
+  "confidence": 1,
+  "linea": "e04"
+ },
+ {
+  "text": " emergencia.",
+  "startMs": 13856,
+  "endMs": 14763,
+  "timestampMs": 13856,
+  "confidence": 1,
+  "linea": "e04"
+ },
+ {
+  "text": " Comida",
+  "startMs": 14763,
+  "endMs": 15113,
+  "timestampMs": 14763,
+  "confidence": 1,
+  "linea": "e04"
+ },
+ {
+  "text": " para",
+  "startMs": 15113,
+  "endMs": 15304,
+  "timestampMs": 15113,
+  "confidence": 1,
+  "linea": "e04"
+ },
+ {
+  "text": " dos",
+  "startMs": 15304,
+  "endMs": 15515,
+  "timestampMs": 15304,
+  "confidence": 1,
+  "linea": "e04"
+ },
+ {
+  "text": " o",
+  "startMs": 15515,
+  "endMs": 15571,
+  "timestampMs": 15515,
+  "confidence": 1,
+  "linea": "e04"
+ },
+ {
+  "text": " tres",
+  "startMs": 15571,
+  "endMs": 15791,
+  "timestampMs": 15571,
+  "confidence": 1,
+  "linea": "e04"
+ },
+ {
+  "text": " días...",
+  "startMs": 15791,
+  "endMs": 16311,
+  "timestampMs": 15791,
+  "confidence": 1,
+  "linea": "e04"
+ },
+ {
+  "text": " para",
+  "startMs": 16311,
+  "endMs": 16492,
+  "timestampMs": 16311,
+  "confidence": 1,
+  "linea": "e04"
+ },
+ {
+  "text": " 33",
+  "startMs": 16492,
+  "endMs": 17076,
+  "timestampMs": 16492,
+  "confidence": 1,
+  "linea": "e04"
+ },
+ {
+  "text": " personas.",
+  "startMs": 17076,
+  "endMs": 17840,
+  "timestampMs": 17076,
+  "confidence": 1,
+  "linea": "e04"
+ },
+ {
+  "text": " El",
+  "startMs": 17840,
+  "endMs": 17970,
+  "timestampMs": 17840,
+  "confidence": 1,
+  "linea": "e05"
+ },
+ {
+  "text": " jefe",
+  "startMs": 17970,
+  "endMs": 18264,
+  "timestampMs": 17970,
+  "confidence": 1,
+  "linea": "e05"
+ },
+ {
+  "text": " de",
+  "startMs": 18264,
+  "endMs": 18375,
+  "timestampMs": 18264,
+  "confidence": 1,
+  "linea": "e05"
+ },
+ {
+  "text": " turno,",
+  "startMs": 18375,
+  "endMs": 18828,
+  "timestampMs": 18375,
+  "confidence": 1,
+  "linea": "e05"
+ },
+ {
+  "text": " Luis",
+  "startMs": 18828,
+  "endMs": 19082,
+  "timestampMs": 18828,
+  "confidence": 1,
+  "linea": "e05"
+ },
+ {
+  "text": " Urzúa,",
+  "startMs": 19082,
+  "endMs": 19611,
+  "timestampMs": 19082,
+  "confidence": 1,
+  "linea": "e05"
+ },
+ {
+  "text": " toma",
+  "startMs": 19611,
+  "endMs": 19832,
+  "timestampMs": 19611,
+  "confidence": 1,
+  "linea": "e05"
+ },
+ {
+  "text": " una",
+  "startMs": 19832,
+  "endMs": 20020,
+  "timestampMs": 19832,
+  "confidence": 1,
+  "linea": "e05"
+ },
+ {
+  "text": " decisión:",
+  "startMs": 20020,
+  "endMs": 20806,
+  "timestampMs": 20020,
+  "confidence": 1,
+  "linea": "e05"
+ },
+ {
+  "text": " racionar.",
+  "startMs": 20806,
+  "endMs": 21588,
+  "timestampMs": 20806,
+  "confidence": 1,
+  "linea": "e05"
+ },
+ {
+  "text": " Dos",
+  "startMs": 21588,
+  "endMs": 21771,
+  "timestampMs": 21588,
+  "confidence": 1,
+  "linea": "e05"
+ },
+ {
+  "text": " cucharadas",
+  "startMs": 21771,
+  "endMs": 22288,
+  "timestampMs": 21771,
+  "confidence": 1,
+  "linea": "e05"
+ },
+ {
+  "text": " de",
+  "startMs": 22288,
+  "endMs": 22398,
+  "timestampMs": 22288,
+  "confidence": 1,
+  "linea": "e05"
+ },
+ {
+  "text": " atún",
+  "startMs": 22398,
+  "endMs": 22649,
+  "timestampMs": 22398,
+  "confidence": 1,
+  "linea": "e05"
+ },
+ {
+  "text": " cada",
+  "startMs": 22649,
+  "endMs": 22924,
+  "timestampMs": 22649,
+  "confidence": 1,
+  "linea": "e05"
+ },
+ {
+  "text": " dos",
+  "startMs": 22924,
+  "endMs": 23136,
+  "timestampMs": 22924,
+  "confidence": 1,
+  "linea": "e05"
+ },
+ {
+  "text": " días.",
+  "startMs": 23136,
+  "endMs": 23747,
+  "timestampMs": 23136,
+  "confidence": 1,
+  "linea": "e05"
+ },
+ {
+  "text": " Arriba,",
+  "startMs": 23747,
+  "endMs": 24256,
+  "timestampMs": 23747,
+  "confidence": 1,
+  "linea": "e06"
+ },
+ {
+  "text": " sus",
+  "startMs": 24256,
+  "endMs": 24468,
+  "timestampMs": 24256,
+  "confidence": 1,
+  "linea": "e06"
+ },
+ {
+  "text": " familias",
+  "startMs": 24468,
+  "endMs": 24944,
+  "timestampMs": 24468,
+  "confidence": 1,
+  "linea": "e06"
+ },
+ {
+  "text": " acampan",
+  "startMs": 24944,
+  "endMs": 25380,
+  "timestampMs": 24944,
+  "confidence": 1,
+  "linea": "e06"
+ },
+ {
+  "text": " junto",
+  "startMs": 25380,
+  "endMs": 25697,
+  "timestampMs": 25380,
+  "confidence": 1,
+  "linea": "e06"
+ },
+ {
+  "text": " a",
+  "startMs": 25697,
+  "endMs": 25754,
+  "timestampMs": 25697,
+  "confidence": 1,
+  "linea": "e06"
+ },
+ {
+  "text": " la",
+  "startMs": 25754,
+  "endMs": 25858,
+  "timestampMs": 25754,
+  "confidence": 1,
+  "linea": "e06"
+ },
+ {
+  "text": " mina.",
+  "startMs": 25858,
+  "endMs": 26375,
+  "timestampMs": 25858,
+  "confidence": 1,
+  "linea": "e06"
+ },
+ {
+  "text": " Lo",
+  "startMs": 26375,
+  "endMs": 26509,
+  "timestampMs": 26375,
+  "confidence": 1,
+  "linea": "e06"
+ },
+ {
+  "text": " llaman",
+  "startMs": 26509,
+  "endMs": 26826,
+  "timestampMs": 26509,
+  "confidence": 1,
+  "linea": "e06"
+ },
+ {
+  "text": " Campamento",
+  "startMs": 26826,
+  "endMs": 27380,
+  "timestampMs": 26826,
+  "confidence": 1,
+  "linea": "e06"
+ },
+ {
+  "text": " Esperanza.",
+  "startMs": 27380,
+  "endMs": 28167,
+  "timestampMs": 27380,
+  "confidence": 1,
+  "linea": "e06"
+ },
+ {
+  "text": " Pasan",
+  "startMs": 28167,
+  "endMs": 28492,
+  "timestampMs": 28167,
+  "confidence": 1,
+  "linea": "e07"
+ },
+ {
+  "text": " 17",
+  "startMs": 28492,
+  "endMs": 29099,
+  "timestampMs": 28492,
+  "confidence": 1,
+  "linea": "e07"
+ },
+ {
+  "text": " días",
+  "startMs": 29099,
+  "endMs": 29372,
+  "timestampMs": 29099,
+  "confidence": 1,
+  "linea": "e07"
+ },
+ {
+  "text": " sin",
+  "startMs": 29372,
+  "endMs": 29567,
+  "timestampMs": 29372,
+  "confidence": 1,
+  "linea": "e07"
+ },
+ {
+  "text": " ninguna",
+  "startMs": 29567,
+  "endMs": 29968,
+  "timestampMs": 29567,
+  "confidence": 1,
+  "linea": "e07"
+ },
+ {
+  "text": " señal.",
+  "startMs": 29968,
+  "endMs": 30668,
+  "timestampMs": 29968,
+  "confidence": 1,
+  "linea": "e07"
+ },
+ {
+  "text": " Hasta",
+  "startMs": 30668,
+  "endMs": 30883,
+  "timestampMs": 30668,
+  "confidence": 1,
+  "linea": "e07"
+ },
+ {
+  "text": " que",
+  "startMs": 30883,
+  "endMs": 31008,
+  "timestampMs": 30883,
+  "confidence": 1,
+  "linea": "e07"
+ },
+ {
+  "text": " una",
+  "startMs": 31008,
+  "endMs": 31184,
+  "timestampMs": 31008,
+  "confidence": 1,
+  "linea": "e07"
+ },
+ {
+  "text": " sonda",
+  "startMs": 31184,
+  "endMs": 31481,
+  "timestampMs": 31184,
+  "confidence": 1,
+  "linea": "e07"
+ },
+ {
+  "text": " perfora",
+  "startMs": 31481,
+  "endMs": 31899,
+  "timestampMs": 31481,
+  "confidence": 1,
+  "linea": "e07"
+ },
+ {
+  "text": " la",
+  "startMs": 31899,
+  "endMs": 32003,
+  "timestampMs": 31899,
+  "confidence": 1,
+  "linea": "e07"
+ },
+ {
+  "text": " roca...",
+  "startMs": 32003,
+  "endMs": 32515,
+  "timestampMs": 32003,
+  "confidence": 1,
+  "linea": "e07"
+ },
+ {
+  "text": " Y",
+  "startMs": 32515,
+  "endMs": 32587,
+  "timestampMs": 32515,
+  "confidence": 1,
+  "linea": "e08"
+ },
+ {
+  "text": " cuando",
+  "startMs": 32587,
+  "endMs": 32912,
+  "timestampMs": 32587,
+  "confidence": 1,
+  "linea": "e08"
+ },
+ {
+  "text": " la",
+  "startMs": 32912,
+  "endMs": 33014,
+  "timestampMs": 32912,
+  "confidence": 1,
+  "linea": "e08"
+ },
+ {
+  "text": " sacan,",
+  "startMs": 33014,
+  "endMs": 33558,
+  "timestampMs": 33014,
+  "confidence": 1,
+  "linea": "e08"
+ },
+ {
+  "text": " lleva",
+  "startMs": 33558,
+  "endMs": 33801,
+  "timestampMs": 33558,
+  "confidence": 1,
+  "linea": "e08"
+ },
+ {
+  "text": " una",
+  "startMs": 33801,
+  "endMs": 33987,
+  "timestampMs": 33801,
+  "confidence": 1,
+  "linea": "e08"
+ },
+ {
+  "text": " nota",
+  "startMs": 33987,
+  "endMs": 34207,
+  "timestampMs": 33987,
+  "confidence": 1,
+  "linea": "e08"
+ },
+ {
+  "text": " atada:",
+  "startMs": 34207,
+  "endMs": 34759,
+  "timestampMs": 34207,
+  "confidence": 1,
+  "linea": "e08"
+ },
+ {
+  "text": " Estamos",
+  "startMs": 34759,
+  "endMs": 35147,
+  "timestampMs": 34759,
+  "confidence": 1,
+  "linea": "e08"
+ },
+ {
+  "text": " bien",
+  "startMs": 35147,
+  "endMs": 35341,
+  "timestampMs": 35147,
+  "confidence": 1,
+  "linea": "e08"
+ },
+ {
+  "text": " en",
+  "startMs": 35341,
+  "endMs": 35437,
+  "timestampMs": 35341,
+  "confidence": 1,
+  "linea": "e08"
+ },
+ {
+  "text": " el",
+  "startMs": 35437,
+  "endMs": 35618,
+  "timestampMs": 35437,
+  "confidence": 1,
+  "linea": "e08"
+ },
+ {
+  "text": " refugio",
+  "startMs": 35618,
+  "endMs": 36098,
+  "timestampMs": 35618,
+  "confidence": 1,
+  "linea": "e08"
+ },
+ {
+  "text": " los",
+  "startMs": 36098,
+  "endMs": 36275,
+  "timestampMs": 36098,
+  "confidence": 1,
+  "linea": "e08"
+ },
+ {
+  "text": " 33.",
+  "startMs": 36275,
+  "endMs": 37157,
+  "timestampMs": 36275,
+  "confidence": 1,
+  "linea": "e08"
+ },
+ {
+  "text": " Pero",
+  "startMs": 37157,
+  "endMs": 37326,
+  "timestampMs": 37157,
+  "confidence": 1,
+  "linea": "e09"
+ },
+ {
+  "text": " sacarlos",
+  "startMs": 37326,
+  "endMs": 37819,
+  "timestampMs": 37326,
+  "confidence": 1,
+  "linea": "e09"
+ },
+ {
+  "text": " era",
+  "startMs": 37819,
+  "endMs": 37947,
+  "timestampMs": 37819,
+  "confidence": 1,
+  "linea": "e09"
+ },
+ {
+  "text": " otro",
+  "startMs": 37947,
+  "endMs": 38142,
+  "timestampMs": 37947,
+  "confidence": 1,
+  "linea": "e09"
+ },
+ {
+  "text": " reto.",
+  "startMs": 38142,
+  "endMs": 38684,
+  "timestampMs": 38142,
+  "confidence": 1,
+  "linea": "e09"
+ },
+ {
+  "text": " Había",
+  "startMs": 38684,
+  "endMs": 38920,
+  "timestampMs": 38684,
+  "confidence": 1,
+  "linea": "e09"
+ },
+ {
+  "text": " que",
+  "startMs": 38920,
+  "endMs": 39046,
+  "timestampMs": 38920,
+  "confidence": 1,
+  "linea": "e09"
+ },
+ {
+  "text": " excavar",
+  "startMs": 39046,
+  "endMs": 39485,
+  "timestampMs": 39046,
+  "confidence": 1,
+  "linea": "e09"
+ },
+ {
+  "text": " un",
+  "startMs": 39485,
+  "endMs": 39632,
+  "timestampMs": 39485,
+  "confidence": 1,
+  "linea": "e09"
+ },
+ {
+  "text": " túnel",
+  "startMs": 39632,
+  "endMs": 39944,
+  "timestampMs": 39632,
+  "confidence": 1,
+  "linea": "e09"
+ },
+ {
+  "text": " de",
+  "startMs": 39944,
+  "endMs": 40058,
+  "timestampMs": 39944,
+  "confidence": 1,
+  "linea": "e09"
+ },
+ {
+  "text": " rescate",
+  "startMs": 40058,
+  "endMs": 40469,
+  "timestampMs": 40058,
+  "confidence": 1,
+  "linea": "e09"
+ },
+ {
+  "text": " a",
+  "startMs": 40469,
+  "endMs": 40527,
+  "timestampMs": 40469,
+  "confidence": 1,
+  "linea": "e09"
+ },
+ {
+  "text": " través",
+  "startMs": 40527,
+  "endMs": 40833,
+  "timestampMs": 40527,
+  "confidence": 1,
+  "linea": "e09"
+ },
+ {
+  "text": " de",
+  "startMs": 40833,
+  "endMs": 40950,
+  "timestampMs": 40833,
+  "confidence": 1,
+  "linea": "e09"
+ },
+ {
+  "text": " 700",
+  "startMs": 40950,
+  "endMs": 41632,
+  "timestampMs": 40950,
+  "confidence": 1,
+  "linea": "e09"
+ },
+ {
+  "text": " metros",
+  "startMs": 41632,
+  "endMs": 41928,
+  "timestampMs": 41632,
+  "confidence": 1,
+  "linea": "e09"
+ },
+ {
+  "text": " de",
+  "startMs": 41928,
+  "endMs": 42051,
+  "timestampMs": 41928,
+  "confidence": 1,
+  "linea": "e09"
+ },
+ {
+  "text": " roca.",
+  "startMs": 42051,
+  "endMs": 42613,
+  "timestampMs": 42051,
+  "confidence": 1,
+  "linea": "e09"
+ },
+ {
+  "text": " Construyeron",
+  "startMs": 42613,
+  "endMs": 43154,
+  "timestampMs": 42613,
+  "confidence": 1,
+  "linea": "e10"
+ },
+ {
+  "text": " una",
+  "startMs": 43154,
+  "endMs": 43370,
+  "timestampMs": 43154,
+  "confidence": 1,
+  "linea": "e10"
+ },
+ {
+  "text": " cápsula",
+  "startMs": 43370,
+  "endMs": 43789,
+  "timestampMs": 43370,
+  "confidence": 1,
+  "linea": "e10"
+ },
+ {
+  "text": " metálica,",
+  "startMs": 43789,
+  "endMs": 44403,
+  "timestampMs": 43789,
+  "confidence": 1,
+  "linea": "e10"
+ },
+ {
+  "text": " la",
+  "startMs": 44403,
+  "endMs": 44514,
+  "timestampMs": 44403,
+  "confidence": 1,
+  "linea": "e10"
+ },
+ {
+  "text": " Fénix,",
+  "startMs": 44514,
+  "endMs": 45087,
+  "timestampMs": 44514,
+  "confidence": 1,
+  "linea": "e10"
+ },
+ {
+  "text": " para",
+  "startMs": 45087,
+  "endMs": 45267,
+  "timestampMs": 45087,
+  "confidence": 1,
+  "linea": "e10"
+ },
+ {
+  "text": " subirlos",
+  "startMs": 45267,
+  "endMs": 45724,
+  "timestampMs": 45267,
+  "confidence": 1,
+  "linea": "e10"
+ },
+ {
+  "text": " uno",
+  "startMs": 45724,
+  "endMs": 45893,
+  "timestampMs": 45724,
+  "confidence": 1,
+  "linea": "e10"
+ },
+ {
+  "text": " a",
+  "startMs": 45893,
+  "endMs": 45948,
+  "timestampMs": 45893,
+  "confidence": 1,
+  "linea": "e10"
+ },
+ {
+  "text": " uno.",
+  "startMs": 45948,
+  "endMs": 46402,
+  "timestampMs": 45948,
+  "confidence": 1,
+  "linea": "e10"
+ },
+ {
+  "text": " 13",
+  "startMs": 46402,
+  "endMs": 46699,
+  "timestampMs": 46402,
+  "confidence": 1,
+  "linea": "e11"
+ },
+ {
+  "text": " de",
+  "startMs": 46699,
+  "endMs": 46808,
+  "timestampMs": 46699,
+  "confidence": 1,
+  "linea": "e11"
+ },
+ {
+  "text": " octubre",
+  "startMs": 46808,
+  "endMs": 47210,
+  "timestampMs": 46808,
+  "confidence": 1,
+  "linea": "e11"
+ },
+ {
+  "text": " de",
+  "startMs": 47210,
+  "endMs": 47338,
+  "timestampMs": 47210,
+  "confidence": 1,
+  "linea": "e11"
+ },
+ {
+  "text": " 2010.",
+  "startMs": 47338,
+  "endMs": 48290,
+  "timestampMs": 47338,
+  "confidence": 1,
+  "linea": "e11"
+ },
+ {
+  "text": " 69",
+  "startMs": 48290,
+  "endMs": 49046,
+  "timestampMs": 48290,
+  "confidence": 1,
+  "linea": "e11"
+ },
+ {
+  "text": " días",
+  "startMs": 49046,
+  "endMs": 49316,
+  "timestampMs": 49046,
+  "confidence": 1,
+  "linea": "e11"
+ },
+ {
+  "text": " después,",
+  "startMs": 49316,
+  "endMs": 49941,
+  "timestampMs": 49316,
+  "confidence": 1,
+  "linea": "e11"
+ },
+ {
+  "text": " el",
+  "startMs": 49941,
+  "endMs": 50072,
+  "timestampMs": 49941,
+  "confidence": 1,
+  "linea": "e11"
+ },
+ {
+  "text": " primer",
+  "startMs": 50072,
+  "endMs": 50384,
+  "timestampMs": 50072,
+  "confidence": 1,
+  "linea": "e11"
+ },
+ {
+  "text": " minero",
+  "startMs": 50384,
+  "endMs": 50659,
+  "timestampMs": 50384,
+  "confidence": 1,
+  "linea": "e11"
+ },
+ {
+  "text": " ve",
+  "startMs": 50659,
+  "endMs": 50782,
+  "timestampMs": 50659,
+  "confidence": 1,
+  "linea": "e11"
+ },
+ {
+  "text": " la",
+  "startMs": 50782,
+  "endMs": 50886,
+  "timestampMs": 50782,
+  "confidence": 1,
+  "linea": "e11"
+ },
+ {
+  "text": " luz.",
+  "startMs": 50886,
+  "endMs": 51403,
+  "timestampMs": 50886,
+  "confidence": 1,
+  "linea": "e11"
+ },
+ {
+  "text": " Uno",
+  "startMs": 51403,
+  "endMs": 51571,
+  "timestampMs": 51403,
+  "confidence": 1,
+  "linea": "e11"
+ },
+ {
+  "text": " a",
+  "startMs": 51571,
+  "endMs": 51626,
+  "timestampMs": 51571,
+  "confidence": 1,
+  "linea": "e11"
+ },
+ {
+  "text": " uno,",
+  "startMs": 51626,
+  "endMs": 51958,
+  "timestampMs": 51626,
+  "confidence": 1,
+  "linea": "e11"
+ },
+ {
+  "text": " salen",
+  "startMs": 51958,
+  "endMs": 52249,
+  "timestampMs": 51958,
+  "confidence": 1,
+  "linea": "e11"
+ },
+ {
+  "text": " los",
+  "startMs": 52249,
+  "endMs": 52419,
+  "timestampMs": 52249,
+  "confidence": 1,
+  "linea": "e11"
+ },
+ {
+  "text": " 33.",
+  "startMs": 52419,
+  "endMs": 53304,
+  "timestampMs": 52419,
+  "confidence": 1,
+  "linea": "e11"
+ },
+ {
+  "text": " Sobrevivieron",
+  "startMs": 53304,
+  "endMs": 53947,
+  "timestampMs": 53304,
+  "confidence": 1,
+  "linea": "e12"
+ },
+ {
+  "text": " porque",
+  "startMs": 53947,
+  "endMs": 54243,
+  "timestampMs": 53947,
+  "confidence": 1,
+  "linea": "e12"
+ },
+ {
+  "text": " se",
+  "startMs": 54243,
+  "endMs": 54371,
+  "timestampMs": 54243,
+  "confidence": 1,
+  "linea": "e12"
+ },
+ {
+  "text": " organizaron",
+  "startMs": 54371,
+  "endMs": 54989,
+  "timestampMs": 54371,
+  "confidence": 1,
+  "linea": "e12"
+ },
+ {
+  "text": " como",
+  "startMs": 54989,
+  "endMs": 55210,
+  "timestampMs": 54989,
+  "confidence": 1,
+  "linea": "e12"
+ },
+ {
+  "text": " un",
+  "startMs": 55210,
+  "endMs": 55289,
+  "timestampMs": 55210,
+  "confidence": 1,
+  "linea": "e12"
+ },
+ {
+  "text": " equipo.",
+  "startMs": 55289,
+  "endMs": 55973,
+  "timestampMs": 55289,
+  "confidence": 1,
+  "linea": "e12"
+ },
+ {
+  "text": " Nadie",
+  "startMs": 55973,
+  "endMs": 56290,
+  "timestampMs": 55973,
+  "confidence": 1,
+  "linea": "e12"
+ },
+ {
+  "text": " se",
+  "startMs": 56290,
+  "endMs": 56426,
+  "timestampMs": 56290,
+  "confidence": 1,
+  "linea": "e12"
+ },
+ {
+  "text": " rindió.",
+  "startMs": 56426,
+  "endMs": 57050,
+  "timestampMs": 56426,
+  "confidence": 1,
+  "linea": "e12"
+ },
+ {
+  "text": " ¿Qué",
+  "startMs": 57050,
+  "endMs": 57205,
+  "timestampMs": 57050,
+  "confidence": 1,
+  "linea": "e12"
+ },
+ {
+  "text": " habrías",
+  "startMs": 57205,
+  "endMs": 57533,
+  "timestampMs": 57205,
+  "confidence": 1,
+  "linea": "e12"
+ },
+ {
+  "text": " hecho",
+  "startMs": 57533,
+  "endMs": 57753,
+  "timestampMs": 57533,
+  "confidence": 1,
+  "linea": "e12"
+ },
+ {
+  "text": " tú",
+  "startMs": 57753,
+  "endMs": 57890,
+  "timestampMs": 57753,
+  "confidence": 1,
+  "linea": "e12"
+ },
+ {
+  "text": " ahí",
+  "startMs": 57890,
+  "endMs": 58009,
+  "timestampMs": 57890,
+  "confidence": 1,
+  "linea": "e12"
+ },
+ {
+  "text": " abajo?",
+  "startMs": 58009,
+  "endMs": 58416,
+  "timestampMs": 58009,
+  "confidence": 1,
+  "linea": "e12"
+ }
+]

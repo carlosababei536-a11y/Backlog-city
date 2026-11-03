@@ -11,9 +11,35 @@ vídeos cortos siguiendo la guía de estilo de [`estilo.md`](estilo.md).
 | `src/` | Composiciones de Remotion |
 | `sub.mjs` + `whisper-config.mjs` | Transcripción con Whisper (whisper.cpp 1.7.5, modelo `medium`, español) con tiempos por palabra |
 | `scripts/analizar-referencia.sh` | Extrae fotogramas (2/s + cambios de plano), audio y loudness de un vídeo de referencia |
+| `scripts/` (resto) | Voz provisional, transcripción, corte de silencios, música, capturas y masterizado |
 | `analisis/` | Datos medidos de la referencia (tiempos de corte, loudness). Los fotogramas no se suben a git |
 | `media/` | Vídeos fuente (`referencia.mp4`, `mi-video.mp4`). **No se sube a git** |
 | `.claude/skills/` | Skills oficiales de Remotion (`npx skills add remotion-dev/skills`) |
+
+## Borrador del Guion 5 (los 33 mineros)
+
+Composición `Guion5` (`src/guion5/`): 21 escenas ilustradas en código, voz provisional sintetizada en local,
+subtítulos palabra a palabra y música y efectos generados, todo según `estilo.md`.
+
+```console
+npm run guion5:voz      # voz provisional (espeak-ng) con el tiempo de cada palabra + corte de silencios > 0,3 s
+npm run guion5:musica   # música de fondo y efectos sintetizados
+npm run guion5:render   # render + masterizado a -13 LUFS -> out/guion5-borrador.mp4
+```
+
+- El texto está en `src/guion5/narracion.json` y el montaje (planos, rótulos, efectos, palabras en rojo) en `src/guion5/plan.ts`, anclado a palabras.
+- La voz provisional necesita `espeak-ng` (`sudo apt install espeak-ng libespeak-ng-dev`). Es robótica a propósito: es solo para el ritmo.
+- Para usar una voz real (grabada o de un servicio TTS): transcríbela con `npm run transcribir`, asigna a cada palabra
+  su `linea` de `narracion.json` (pendiente de automatizar) y guarda el resultado como `public/guion5/voz.palabras.json`.
+
+## Con tu vídeo (`mi-video.mp4`)
+
+```console
+npm run transcribir -- media/mi-video.mp4 public/mi-video          # Whisper, tiempos por palabra
+npm run cortar-silencios -- media/mi-video.mp4 public/mi-video/palabras.json public/mi-video/mi-video-cortado.mp4
+```
+
+`src/estilo/bloques.ts` agrupa las palabras con las reglas de estilo.md y `src/componentes/Subtitulos.tsx` las anima.
 
 ## Comandos
 

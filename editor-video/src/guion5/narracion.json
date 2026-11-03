@@ -1,0 +1,19 @@
+{
+  "titulo": "Guion 5: Los 33 mineros de Chile (2010)",
+  "fuente": "Pack de guiones: historias reales de supervivencia",
+  "voz": { "motor": "espeak-ng", "voz": "es", "velocidad": 200, "tono": 38 },
+  "lineas": [
+    { "id": "e01", "texto": "33 hombres atrapados a 700 metros bajo tierra. Y el mundo los daba por muertos." },
+    { "id": "e02", "texto": "5 de agosto de 2010. Mina San José, desierto de Atacama, Chile." },
+    { "id": "e03", "texto": "De repente, la montaña se derrumba sobre ellos." },
+    { "id": "e04", "texto": "Se refugian en una pequeña sala de emergencia. Comida para dos o tres días... para 33 personas." },
+    { "id": "e05", "texto": "El jefe de turno, Luis Urzúa, toma una decisión: racionar. Dos cucharadas de atún cada dos días." },
+    { "id": "e06", "texto": "Arriba, sus familias acampan junto a la mina. Lo llaman Campamento Esperanza." },
+    { "id": "e07", "texto": "Pasan 17 días sin ninguna señal. Hasta que una sonda perfora la roca..." },
+    { "id": "e08", "texto": "Y cuando la sacan, lleva una nota atada: Estamos bien en el refugio los 33." },
+    { "id": "e09", "texto": "Pero sacarlos era otro reto. Había que excavar un túnel de rescate a través de 700 metros de roca." },
+    { "id": "e10", "texto": "Construyeron una cápsula metálica, la Fénix, para subirlos uno a uno." },
+    { "id": "e11", "texto": "13 de octubre de 2010. 69 días después, el primer minero ve la luz. Uno a uno, salen los 33." },
+    { "id": "e12", "texto": "Sobrevivieron porque se organizaron como un equipo. Nadie se rindió. ¿Qué habrías hecho tú ahí abajo?" }
+  ]
+}

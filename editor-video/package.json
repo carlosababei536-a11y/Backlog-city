@@ -9,20 +9,22 @@
   },
   "private": true,
   "dependencies": {
-    "@remotion/cli": "4.0.540",
-    "@remotion/zod-types": "4.0.540",
     "@remotion/animation-utils": "4.0.540",
+    "@remotion/cli": "4.0.540",
     "@remotion/layout-utils": "4.0.540",
     "@remotion/media-utils": "4.0.540",
+    "@remotion/zod-types": "4.0.540",
     "react": "19.3.1",
     "react-dom": "19.3.1",
     "remotion": "4.0.540",
     "zod": "4.6.7"
   },
   "devDependencies": {
+    "@fontsource/montserrat": "^5.3.0",
+    "@fontsource/permanent-marker": "^5.3.0",
+    "@remotion/captions": "4.0.540",
     "@remotion/eslint-config-flat": "4.0.540",
     "@remotion/install-whisper-cpp": "4.0.540",
-    "@remotion/captions": "4.0.540",
     "@types/react": "19.3.0",
     "@types/web": "0.0.166",
     "eslint": "10.12.0",
@@ -34,7 +36,12 @@
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
     "lint": "eslint src && tsc",
-    "create-subtitles": "node sub.mjs"
+    "create-subtitles": "node sub.mjs",
+    "transcribir": "node scripts/transcribir.mjs",
+    "cortar-silencios": "node scripts/cortar-silencios.mjs",
+    "guion5:voz": "node scripts/generar-voz.mjs src/guion5/narracion.json public/guion5 && node scripts/cortar-silencios.mjs public/guion5/voz-bruta.wav public/guion5/palabras-brutas.json public/guion5/voz.wav",
+    "guion5:musica": "python3 scripts/generar-musica.py public/guion5/voz.palabras.json public/guion5",
+    "guion5:render": "remotion render Guion5 out/guion5-borrador-sin-master.mp4 --codec=h264 --crf=18 && bash scripts/masterizar.sh out/guion5-borrador-sin-master.mp4 out/guion5-borrador.mp4"
   },
   "allowScripts": {
     "esbuild": false

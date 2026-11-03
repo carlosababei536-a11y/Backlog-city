@@ -12,3 +12,8 @@ media/
 analisis/frames_*/
 analisis/*.wav
 temp/
+scripts/tts/espeak_palabras
+# Audio generado (se regenera con npm run guion5:voz y npm run guion5:musica)
+public/guion5/*.wav
+public/guion5/sfx/
+public/guion5/narracion.txt
