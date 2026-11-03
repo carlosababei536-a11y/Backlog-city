@@ -41,7 +41,10 @@
     "cortar-silencios": "node scripts/cortar-silencios.mjs",
     "guion5:voz": "node scripts/generar-voz.mjs src/guion5/narracion.json public/guion5 && node scripts/cortar-silencios.mjs public/guion5/voz-bruta.wav public/guion5/palabras-brutas.json public/guion5/voz.wav",
     "guion5:musica": "python3 scripts/generar-musica.py public/guion5/voz.palabras.json public/guion5",
-    "guion5:render": "remotion render Guion5 out/guion5-borrador-sin-master.mp4 --codec=h264 --crf=18 && bash scripts/masterizar.sh out/guion5-borrador-sin-master.mp4 out/guion5-borrador.mp4"
+    "guion5:render": "remotion render Guion5 out/guion5-borrador-sin-master.mp4 --codec=h264 --crf=18 && bash scripts/masterizar.sh out/guion5-borrador-sin-master.mp4 out/guion5-borrador.mp4",
+    "editar-mi-video": "bash scripts/editar-mi-video.sh",
+    "guion5:voz-real": "bash scripts/voz-real.sh",
+    "alinear-guion": "node scripts/alinear-guion.mjs"
   },
   "allowScripts": {
     "esbuild": false

@@ -29,6 +29,25 @@ const limpiar = (s: string) => s.trim().replace(/["'«»“”]/g, "").toUpperCa
 const terminaFrase = (t: string) => /[.,;:!?…]$/.test(t) || t.endsWith("...");
 const esNumero = (t: string) => /^\d+[.,]?$/.test(t);
 
+// Palabras largas que no aportan (no se destacan solas)
+const VACIAS = new Set(
+  "porque cuando entonces despues tambien nuestro nuestra nuestros ustedes aunque mientras siempre durante contra desde hasta sobre entre estaba estaban estamos habia habian tienen tiene puede pueden hacer queria quiero vamos cosas alguien muchos muchas todos todas ellos ellas nosotros vosotros aquel aquella donde cuanto cuantos cada otros otras parece realmente simplemente basicamente bastante demasiado ningun ninguna ninguno solamente algunos algunas tambien todavia quizas ademas despues antes ahora hacia segun mismo misma mismos".split(
+    " ",
+  ),
+);
+const esNumeroClave = (clave: string) => /^\d+$/.test(clave);
+
+/** Elige la palabra en rojo de un bloque sin lista manual (estilo.md §3): cifra > sustantivo largo; ~50 % de bloques */
+const elegirAuto = (ps: Palabra[], anteriorDestacado: boolean): Palabra | undefined => {
+  const candidatas = ps
+    .map((p) => ({ p, puntos: esNumeroClave(p.clave) ? 100 : p.clave.length >= 6 && !VACIAS.has(p.clave) ? p.clave.length : 0 }))
+    .filter((c) => c.puntos > 0)
+    .sort((a, b) => b.puntos - a.puntos);
+  if (!candidatas.length) return undefined;
+  if (anteriorDestacado && candidatas[0].puntos < 8) return undefined;
+  return candidatas[0].p;
+};
+
 /**
  * Agrupa palabras en bloques según estilo.md §3:
  *  1) se cierra tras coma, punto, puntos suspensivos o dos puntos;
@@ -36,10 +55,11 @@ const esNumero = (t: string) => /^\d+[.,]?$/.test(t);
  *  3) un número nunca se separa de la palabra que le sigue;
  *  4) una pausa en la voz (> pausaMs entre palabras) también cierra el bloque.
  * `destacadas`: por línea, las claves (normalizadas) de las palabras en rojo. Máx. 1 por bloque.
+ * Con "auto", se elige sola (cifra > palabra larga con contenido) en ~50 % de los bloques.
  */
 export const crearBloques = (
   captions: (Caption & { linea?: string })[],
-  destacadas: Record<string, string[]> = {},
+  destacadas: Record<string, string[]> | "auto" = {},
   { pausaMs = 350, colaMs = 900 }: { pausaMs?: number; colaMs?: number } = {},
 ): Bloque[] => {
   const palabras: Palabra[] = captions
@@ -76,11 +96,15 @@ export const crearBloques = (
   }
   cerrar();
 
-  // Palabras destacadas: la primera que coincida en cada bloque
+  // Palabras destacadas: la primera que coincida en cada bloque (o elección automática)
+  let anterior = false;
   for (const b of bloques) {
-    const lista = destacadas[b[0].linea ?? ""] ?? [];
-    const elegida = b.find((p) => lista.includes(p.clave));
+    const elegida: Palabra | undefined =
+      destacadas === "auto"
+        ? elegirAuto(b, anterior)
+        : b.find((p) => (destacadas[b[0].linea ?? ""] ?? []).includes(p.clave));
     if (elegida) elegida.destacada = true;
+    anterior = Boolean(elegida);
   }
 
   return bloques.map((ps, i) => ({

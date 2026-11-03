@@ -1,6 +1,7 @@
 import React, { useMemo } from "react";
 import { AbsoluteFill, Audio, interpolate, Sequence, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { z } from "zod";
+import { Camara } from "../componentes/Camara";
 import { Subtitulos } from "../componentes/Subtitulos";
 import { Cartel, Etiqueta, InsigniaDia, Llamada, Pregunta } from "../componentes/Rotulos";
 import { crearBloques } from "../estilo/bloques";
@@ -23,36 +24,6 @@ const PALABRAS = palabrasVoz as PalabraVoz[];
 export const duracionGuion5 = () => {
   const ultima = PALABRAS[PALABRAS.length - 1];
   return Math.ceil(((ultima.endMs + 450) / 1000 + COLA_FINAL_S) * FPS);
-};
-
-// Cámara: encuadre que pone el punto (x, y) de la escena en el centro de la pantalla, con escala y giro
-const Camara: React.FC<React.PropsWithChildren<{ plano: PlanoResuelto }>> = ({ plano, children }) => {
-  const frame = useCurrentFrame(); // relativo al plano
-  const dur = plano.hasta - plano.desde;
-  const t = interpolate(frame, [0, Math.max(1, dur)], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-  const s = plano.enc.s + (plano.fin.s - plano.enc.s) * t;
-  const x = plano.enc.x + (plano.fin.x - plano.enc.x) * t;
-  const y = plano.enc.y + (plano.fin.y - plano.enc.y) * t;
-  const r = (plano.enc.r ?? 0) + ((plano.fin.r ?? 0) - (plano.enc.r ?? 0)) * t;
-  const temblor = plano.temblor ? plano.temblor * Math.max(0, 1 - frame / 24) : 0;
-  const dx = temblor * Math.sin(frame * 2.3);
-  const dy = temblor * Math.cos(frame * 3.1);
-  // Desenfoque de transición (5 fotogramas: 2 saliendo, 1 máximo, 2 entrando)
-  let blur = 0;
-  if (plano.trans === "desenfoque" && frame < 3) blur = [TRANS.desenfoque[2], TRANS.desenfoque[3], TRANS.desenfoque[4]][frame];
-  if (plano.transSalida === "desenfoque" && dur - frame <= 2) blur = [TRANS.desenfoque[0], TRANS.desenfoque[1]][2 - (dur - frame)] ?? 0;
-  return (
-    <AbsoluteFill style={{ overflow: "hidden", filter: blur ? `blur(${blur}px)` : undefined }}>
-      <AbsoluteFill
-        style={{
-          transformOrigin: `${x}px ${y}px`,
-          transform: `translate(${540 - x + dx}px, ${960 - y + dy}px) scale(${s}) rotate(${r}deg)`,
-        }}
-      >
-        {children}
-      </AbsoluteFill>
-    </AbsoluteFill>
-  );
 };
 
 const RotuloPantalla: React.FC<{ r: RotuloResuelto; frame: number }> = ({ r, frame }) => {
@@ -104,14 +75,14 @@ export const Guion5: React.FC<z.infer<typeof guion5Schema>> = ({ voz, conMusica 
         const Comp = ESCENAS[esc.comp];
         return (
           <Sequence key={i} from={p.desde} durationInFrames={p.hasta - p.desde} name={`${esc.comp} · plano ${i + 1}`}>
-            <Camara plano={p}>
+            <CamaraPlano plano={p}>
               <PlanoEscena Comp={Comp} desfase={p.desde - esc.desde} dur={esc.hasta - esc.desde} marcas={esc.marcasF} datos={esc.datos} />
               {rotulos
                 .filter((r) => r.escena === p.escena && (r.tipo === "etiqueta" || r.tipo === "llamada"))
                 .map((r, k) => (
                   <RotuloEscena key={k} r={r} frame={frame} />
                 ))}
-            </Camara>
+            </CamaraPlano>
             {p.trans === "flash" && (
               <AbsoluteFill style={{ background: COLOR.flash, opacity: frame - p.desde < TRANS.flashFotogramas ? 1 : 0 }} />
             )}
@@ -152,4 +123,14 @@ const PlanoEscena: React.FC<{
 }> = ({ Comp, desfase, dur, marcas, datos }) => {
   const frame = useCurrentFrame();
   return <Comp f={frame + desfase} dur={dur} m={marcas} datos={datos} />;
+};
+
+// La cámara necesita el fotograma relativo al plano (dentro de su <Sequence>)
+const CamaraPlano: React.FC<React.PropsWithChildren<{ plano: PlanoResuelto }>> = ({ plano, children }) => {
+  const frame = useCurrentFrame();
+  return (
+    <Camara plano={plano} frame={frame}>
+      {children}
+    </Camara>
+  );
 };

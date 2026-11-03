@@ -29,17 +29,32 @@ npm run guion5:render   # render + masterizado a -13 LUFS -> out/guion5-borrador
 
 - El texto está en `src/guion5/narracion.json` y el montaje (planos, rótulos, efectos, palabras en rojo) en `src/guion5/plan.ts`, anclado a palabras.
 - La voz provisional necesita `espeak-ng` (`sudo apt install espeak-ng libespeak-ng-dev`). Es robótica a propósito: es solo para el ritmo.
-- Para usar una voz real (grabada o de un servicio TTS): transcríbela con `npm run transcribir`, asigna a cada palabra
-  su `linea` de `narracion.json` (pendiente de automatizar) y guarda el resultado como `public/guion5/voz.palabras.json`.
+- Para usar una voz real (grabada o de un servicio TTS), mira «Voz real para el Guion 5» más abajo.
 
-## Con tu vídeo (`mi-video.mp4`)
+## Con tu vídeo (`mi-video.mp4`): un solo comando
 
 ```console
-npm run transcribir -- media/mi-video.mp4 public/mi-video          # Whisper, tiempos por palabra
-npm run cortar-silencios -- media/mi-video.mp4 public/mi-video/palabras.json public/mi-video/mi-video-cortado.mp4
+npm run editar-mi-video -- media/mi-video.mp4            # → out/mi-video-borrador.mp4
+npm run editar-mi-video -- media/mi-video.mp4 palabras   # si hay ruido o música de fondo
+npm run editar-mi-video -- media/mi-video.mp4 audio 540 700   # indicando dónde está tu cara (x y)
 ```
 
-`src/estilo/bloques.ts` agrupa las palabras con las reglas de estilo.md y `src/componentes/Subtitulos.tsx` las anima.
+Hace: Whisper con tiempos por palabra → corta silencios > 0,3 s (cortes ajustados a fotograma, sin desincronizar)
+→ composición `MiVideo`: subtítulos palabra a palabra de estilo.md, palabras en rojo elegidas solas (~50 % de bloques),
+un plano nuevo cada 0,9–1,6 s al empezar un bloque, alternando normal y punch-in x1,35, zoom lento +4 % → masterizado a −13 LUFS.
+
+Probado con un vídeo sintético: 16,9 s → 13,1 s, 5 silencios cortados, la voz cae en el instante previsto tras cada corte.
+
+## Voz real para el Guion 5
+
+```console
+npm run guion5:voz-real -- voz.mp3     # Whisper → alinear con narracion.json → cortar silencios → música nueva
+npm run guion5:render
+```
+
+`scripts/alinear-guion.mjs` asigna cada palabra oída a su palabra y línea del guion (programación dinámica; los
+números se comparan en letra). En la prueba con errores simulados: 175/175 líneas correctas, error de tiempo
+mediano de 20 ms.
 
 ## Comandos
 

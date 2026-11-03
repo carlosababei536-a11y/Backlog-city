@@ -17,3 +17,7 @@ scripts/tts/espeak_palabras
 public/guion5/*.wav
 public/guion5/sfx/
 public/guion5/narracion.txt
+
+# Tu vídeo y sus derivados (no se suben a git)
+public/mi-video/
+public/test-mi-video/
