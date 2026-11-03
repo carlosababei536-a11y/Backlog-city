@@ -1,0 +1,14 @@
+node_modules
+dist
+.DS_Store
+.env
+
+# Ignore the output video from Git but not videos you import into src/.
+out
+whisper.cpp
+
+# Vídeos fuente, audio y fotogramas extraídos (pesan mucho y el de referencia no es tuyo)
+media/
+analisis/frames_*/
+analisis/*.wav
+temp/
